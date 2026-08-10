@@ -1,0 +1,95 @@
+{
+  "deities": {
+    "shiv": {
+      "name": "Shiv",
+      "queries": [
+        "Shiv Bhajan",
+        "Mahadev Aarti",
+        "Om Namah Shivaya Mantra",
+        "Shiv Tandav Stotra",
+        "Bhole Nath Bhajan",
+        "Mahamrityunjaya Mantra"
+      ]
+    },
+    "krishna": {
+      "name": "Krishna",
+      "queries": [
+        "Krishna Bhajan",
+        "Hare Krishna Mantra",
+        "Krishna Aarti",
+        "Govind Bolo Hari Gopal Bolo",
+        "Radha Krishna Bhajan",
+        "Krishna Kirtan"
+      ]
+    },
+    "ram": {
+      "name": "Ram",
+      "queries": [
+        "Ram Bhajan",
+        "Raghupati Raghav Raja Ram",
+        "Ram Aarti",
+        "Hanuman Chalisa",
+        "Ramcharit Manas",
+        "Jai Shri Ram Bhajan"
+      ]
+    },
+    "hanuman": {
+      "name": "Hanuman",
+      "queries": [
+        "Hanuman Bhajan",
+        "Hanuman Chalisa",
+        "Bajrang Baan",
+        "Hanuman Aarti",
+        "Sankat Mochan Hanuman",
+        "Hanuman Mantra"
+      ]
+    },
+    "durga": {
+      "name": "Durga",
+      "queries": [
+        "Durga Bhajan",
+        "Maa Durga Aarti",
+        "Durga Mantra",
+        "Navratri Bhajan",
+        "Durga Saptashati",
+        "Jai Ambe Gauri"
+      ]
+    },
+    "ganesh": {
+      "name": "Ganesh",
+      "queries": [
+        "Ganesh Bhajan",
+        "Ganesh Aarti",
+        "Ganesh Mantra",
+        "Jai Ganesh Deva",
+        "Ganesh Stotra",
+        "Sukhkarta Dukhharta"
+      ]
+    }
+  },
+  "types": {
+    "bhajan": [
+      "bhajan",
+      "song"
+    ],
+    "aarti": [
+      "aarti"
+    ],
+    "mantra": [
+      "mantra",
+      "jaap"
+    ],
+    "stotra": [
+      "stotra",
+      "stotram",
+      "path"
+    ],
+    "kirtan": [
+      "kirtan"
+    ]
+  },
+  "max_per_query": 10,
+  "max_total_per_deity": 40,
+  "video_duration": "medium",
+  "order": "viewCount"
+}
