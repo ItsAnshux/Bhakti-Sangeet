@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080a0b">
+<meta name="description" content="BhaktiSangeet — Hindu devotional songs played from YouTube.">
+<title>BhaktiSangeet — Hindu Devotional Songs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#"><span>ॐ</span><div><strong><i>Bhakti</i>Sangeet</strong><small>Hindu Devotional Songs</small></div></a>
+  <div class="search"><input id="search" placeholder="Search devotional songs, bhajans, aarti..."><button onclick="searchSongs()">⌕</button></div>
+  <button class="top-btn">♡<small>Favorites</small></button>
+  <button class="top-btn">☰<small>Menu</small></button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">← &nbsp; FEEL THE DIVINITY &nbsp; →</div>
+    <h1>Immerse in Divine<br><em>Bhakti & Devotion</em></h1>
+    <p>Listen to Hindu devotional songs, bhajans, aartis and mantras directly from YouTube.</p>
+    <button class="gold-btn" onclick="randomPlay()">▶ &nbsp; Play Random Bhajan</button>
+  </div>
+  <div class="om-art">ॐ</div>
+  <div class="dots"><b></b><i></i><i></i><i></i><i></i></div>
+</section>
+
+<section class="wrap">
+  <div class="heading"><h2>🪔 Browse Categories</h2><span id="updated"></span></div>
+  <div class="categories" id="categories"></div>
+</section>
+
+<section class="wrap">
+  <div class="heading"><h2>🎵 Latest Devotional Songs</h2><button onclick="randomPlay()">View Random ›</button></div>
+  <div class="player-box">
+    <div id="player"></div>
+    <div class="player-info"><span id="playingCat">All Bhajans</span><h3 id="playingTitle">Choose a devotional song</h3><p>Embedded from YouTube • This website does not host audio/video files</p><button onclick="randomPlay()">↻ Random Next</button></div>
+  </div>
+  <div class="songs" id="songs"></div>
+</section>
+
+<section class="cta">
+  <div class="cta-om">ॐ</div>
+  <div><h2>Carry Devotion Wherever You Go</h2><p>New devotional videos can be added automatically from YouTube.</p></div>
+  <button class="gold-btn" onclick="randomPlay()">☷ &nbsp; Start Listening</button>
+</section>
+</main>
+
+<footer>
+  <div class="foot-brand"><div class="logo"><span>ॐ</span><div><strong><i>Bhakti</i>Sangeet</strong><small>Hindu Devotional Songs</small></div></div><p>A simple YouTube-powered devotional music experience.</p></div>
+  <div><h3>Quick Links</h3><a>Home</a><a>Categories</a><a>Latest Songs</a></div>
+  <div><h3>Categories</h3><a>Shiv Bhajan</a><a>Krishna Bhajan</a><a>Hanuman Bhajan</a><a>Aarti</a></div>
+  <div><h3>Legal</h3><a>Privacy Policy</a><a>Disclaimer</a><a>YouTube</a></div>
+</footer>
+<div class="copy">© 2026 BhaktiSangeet. All Rights Reserved. <span>YouTube-powered devotional player</span></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+let songs=[], player=null, currentFilter="all";
+
+const catIcons={Shiv:"🔱",Krishna:"🦚",Ram:"🏹",Hanuman:"🙏",Durga:"🌺",Ganesh:"🐘",Aarti:"🪔",Bhajans:"🎵"};
+const cats=["Shiv","Krishna","Ram","Hanuman","Durga","Ganesh","Aarti","Bhajans"];
+
+async function loadSongs(){
+  try{
+    const r=await fetch("songs.json?"+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error("songs.json missing");
+    songs=await r.json();
+    document.getElementById("updated").textContent=`${songs.length} videos`;
+    renderCats(); renderSongs();
+  }catch(e){
+    document.getElementById("songs").innerHTML="<p style='color:#888'>Song list is being prepared. Run the GitHub Action once to generate songs.json.</p>";
+  }
+}
+function renderCats(){
+ document.getElementById("categories").innerHTML=cats.map(c=>`<button class="cat" onclick="filterSongs('${c}')"><div>${catIcons[c]}</div><b>${c==="Bhajans"?"Bhajans":c+" Bhajan"}</b><small>${songs.filter(s=>s.cat===c).length} Songs</small></button>`).join("");
+}
+function renderSongs(list=songs){
+ document.getElementById("songs").innerHTML=list.slice(0,40).map(s=>`<article class="song" onclick="playSong('${s.id}')"><div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${s.id}/hqdefault.jpg" alt=""><span>▶</span></div><div class="song-body"><h3>${esc(s.title)}</h3><p>${esc(s.cat)} · YouTube</p></div></article>`).join("");
+}
+function filterSongs(cat){currentFilter=cat;renderSongs(songs.filter(s=>s.cat===cat));document.querySelector(".songs").scrollIntoView({behavior:"smooth",block:"start"});}
+function playSong(id){
+ const s=songs.find(x=>x.id===id); if(!s)return;
+ document.getElementById("playingTitle").textContent=s.title;
+ document.getElementById("playingCat").textContent=s.cat;
+ if(player)player.loadVideoById(id);
+ document.querySelector(".player-box").scrollIntoView({behavior:"smooth",block:"center"});
+}
+function randomPlay(){
+ const pool=(currentFilter==="all"?songs:songs.filter(s=>s.cat===currentFilter));
+ if(!pool.length)return;
+ playSong(pool[Math.floor(Math.random()*pool.length)].id);
+}
+function searchSongs(){
+ const q=document.getElementById("search").value.toLowerCase().trim();
+ renderSongs(!q?songs:songs.filter(s=>(s.title+" "+s.cat).toLowerCase().includes(q)));
+}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+function onYouTubeIframeAPIReady(){
+ player=new YT.Player("player",{height:"100%",width:"100%",videoId:"",playerVars:{controls:1,rel:0,playsinline:1,modestbranding:1},events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)randomPlay();}});
+}
+document.addEventListener("DOMContentLoaded",()=>{
+ loadSongs();
+ document.getElementById("search").addEventListener("keydown",e=>{if(e.key==="Enter")searchSongs()});
+});
+</script>
+</body>
+</html>
