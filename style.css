@@ -1,0 +1,276 @@
+:root {
+  --bg: #2A0810;
+  --bg-panel: #3A0F1B;
+  --gold: #D9A441;
+  --gold-bright: #F2C066;
+  --ivory: #F7ECD9;
+  --ivory-dim: #CDBBA6;
+  --maroon-line: rgba(217, 164, 65, 0.25);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ivory);
+  font-family: 'Mukta', system-ui, sans-serif;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.mandala-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(217,164,65,0.10), transparent 60%),
+    repeating-conic-gradient(from 0deg at 50% -20%, rgba(217,164,65,0.04) 0deg 6deg, transparent 6deg 12deg);
+  background-size: 100% 100%, 1400px 1400px;
+}
+
+.site-header, .category-thali, .player-stage, .playlist-section, .site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 48px 20px 20px;
+}
+
+.flame {
+  width: 10px;
+  height: 22px;
+  margin: 0 auto 8px;
+  position: relative;
+}
+.flame span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 22px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at bottom, var(--gold-bright) 0%, #E8792A 55%, transparent 80%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker 1.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(232,121,42,0.8));
+}
+@keyframes flicker {
+  0%, 100% { transform: translateX(-50%) scale(1) rotate(0deg); }
+  25% { transform: translateX(-50%) scale(0.94, 1.05) rotate(-3deg); }
+  50% { transform: translateX(-52%) scale(1.05, 0.96) rotate(2deg); }
+  75% { transform: translateX(-48%) scale(0.97, 1.02) rotate(-1deg); }
+}
+
+.site-title {
+  font-family: 'Yatra One', cursive;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  color: var(--gold-bright);
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 24px rgba(242,192,102,0.25);
+}
+
+.site-tagline {
+  margin: 8px 0 0;
+  color: var(--ivory-dim);
+  font-size: 0.95rem;
+}
+
+/* Category thali */
+.category-thali {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 16px 20px 8px;
+}
+
+.cat-pill {
+  --pill: var(--gold);
+  background: transparent;
+  border: 1.5px solid var(--pill);
+  color: var(--ivory);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.cat-pill:hover {
+  background: color-mix(in srgb, var(--pill) 20%, transparent);
+}
+.cat-pill.active {
+  background: var(--pill);
+  color: #1A0509;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--pill) 60%, transparent);
+}
+
+/* Player stage */
+.player-stage {
+  max-width: 720px;
+  margin: 24px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.np-label {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.np-title {
+  margin: 4px 0 2px;
+  font-size: 1.3rem;
+  color: var(--ivory);
+  min-height: 1.6em;
+}
+
+.np-sub {
+  margin: 0 0 16px;
+  font-size: 0.85rem;
+  color: var(--ivory-dim);
+  min-height: 1.2em;
+}
+
+.player-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid var(--maroon-line);
+  box-shadow: 0 0 40px rgba(217,164,65,0.12);
+  background: #000;
+}
+.player-frame #player,
+.player-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0 8px;
+}
+
+.ctrl-btn {
+  background: var(--bg-panel);
+  border: 1.5px solid var(--gold);
+  color: var(--ivory);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+.ctrl-btn:hover { transform: translateY(-1px); background: #4A1420; }
+.ctrl-btn.gong {
+  background: var(--gold);
+  color: #1A0509;
+  font-weight: 700;
+  padding: 12px 26px;
+}
+.ctrl-btn.gong:hover { background: var(--gold-bright); }
+
+/* Playlist */
+.playlist-section {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 0 20px 60px;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--maroon-line);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.playlist-header h3 {
+  font-family: 'Yatra One', cursive;
+  color: var(--gold-bright);
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.playlist-count {
+  color: var(--ivory-dim);
+  font-size: 0.85rem;
+}
+
+.playlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.playlist li {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(217,164,65,0.12);
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+.playlist li:hover { background: rgba(217,164,65,0.08); }
+.playlist li.playing {
+  background: rgba(217,164,65,0.16);
+  color: var(--gold-bright);
+}
+.playlist li .track-title {
+  flex: 1;
+  font-size: 0.95rem;
+}
+.playlist li .track-channel {
+  font-size: 0.75rem;
+  color: var(--ivory-dim);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--ivory-dim);
+  padding: 30px 0;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--ivory-dim);
+  font-size: 0.78rem;
+  border-top: 1px solid var(--maroon-line);
+}
+
+/* Accessibility */
+a:focus-visible, button:focus-visible, li:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flame span { animation: none; }
+}
