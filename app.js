@@ -55,6 +55,9 @@
     allData = await res.json();
     buildList();
     renderPlaylist();
+    if (currentList.length) {
+      selectIndex(0);
+    }
   }
 
   function buildList() {
