@@ -1,0 +1,39 @@
+name: Update Devotional Video Library
+
+on:
+  schedule:
+    # Runs daily at 5:00 AM UTC (~10:30 AM IST)
+    - cron: "0 5 * * *"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-videos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch new videos from YouTube
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/fetch-videos.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "bhaktisangeet-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet data/videos.json; then
+            echo "No new videos found today."
+          else
+            git add data/videos.json
+            git commit -m "Auto-update: new devotional videos $(date -u +'%Y-%m-%d')"
+            git push
+          fi
