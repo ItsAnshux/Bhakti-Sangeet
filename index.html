@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BhaktiSangeet â€” Bhajans, Aartis &amp; Mantras</title>
+<meta name="description" content="Discover and play Bhajans, Aartis, and Mantras across Shiv, Krishna, Ram, Hanuman, Durga and Ganesh â€” powered by YouTube." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="mandala-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="flame" aria-hidden="true"><span></span></div>
+  <h1 class="site-title">BhaktiSangeet</h1>
+  <p class="site-tagline">Bhajan, Aarti aur Mantra â€” ek jagah, bina kisi hosting jhanjhat ke</p>
+</header>
+
+<nav class="category-thali" id="categoryThali" aria-label="Devotional categories">
+  <button class="cat-pill active" data-category="All">All</button>
+  <button class="cat-pill" data-category="Shiv" style="--pill:#8FA3A6">Shiv</button>
+  <button class="cat-pill" data-category="Krishna" style="--pill:#2D5DA6">Krishna</button>
+  <button class="cat-pill" data-category="Ram" style="--pill:#E0A537">Ram</button>
+  <button class="cat-pill" data-category="Hanuman" style="--pill:#D9480F">Hanuman</button>
+  <button class="cat-pill" data-category="Durga" style="--pill:#A31621">Durga</button>
+  <button class="cat-pill" data-category="Ganesh" style="--pill:#C9962C">Ganesh</button>
+</nav>
+
+<main class="player-stage">
+  <div class="now-playing">
+    <p class="np-label">Ab baj raha hai</p>
+    <h2 class="np-title" id="npTitle">Koi bhajan chuniye ya shuffle dabaiye</h2>
+    <p class="np-sub" id="npMeta">&nbsp;</p>
+  </div>
+
+  <div class="player-frame">
+    <div id="player"></div>
+  </div>
+
+  <div class="controls">
+    <button class="ctrl-btn" id="prevBtn" title="Pichla">âŸ²</button>
+    <button class="ctrl-btn gong" id="shuffleBtn" title="Random bajao">ðŸ”” Shuffle</button>
+    <button class="ctrl-btn" id="nextBtn" title="Agla">âŸ³</button>
+  </div>
+</main>
+
+<section class="playlist-section">
+  <div class="playlist-header">
+    <h3 id="playlistTitle">All Bhajans</h3>
+    <span class="playlist-count" id="playlistCount"></span>
+  </div>
+  <ul class="playlist" id="playlist"></ul>
+  <p class="empty-state" id="emptyState" hidden>
+    Abhi is category mein videos nahi hain â€” jald hi auto-update ho jayenge.
+  </p>
+</section>
+
+<footer class="site-footer">
+  <p>Har video YouTube se stream hota hai â€” koi content yahan host nahi hota. Library daily auto-update hoti hai.</p>
+</footer>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="app.js"></script>
+</body>
+</html>
