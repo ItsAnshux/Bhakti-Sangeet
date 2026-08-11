@@ -1,0 +1,26 @@
+{
+  "Shiv": {
+    "channels": [],
+    "keywords": ["Shiv Bhajan", "Mahadev Aarti", "Om Namah Shivaya", "Shiv Tandav Stotram", "Bholenath Bhajan"]
+  },
+  "Krishna": {
+    "channels": [],
+    "keywords": ["Krishna Bhajan", "Radha Krishna Bhajan", "Krishna Aarti", "Hare Krishna Kirtan", "Kanha Bhajan"]
+  },
+  "Ram": {
+    "channels": [],
+    "keywords": ["Ram Bhajan", "Shree Ram Aarti", "Ram Siya Ram", "Raghupati Raghav Bhajan", "Ayodhya Ram Bhajan"]
+  },
+  "Hanuman": {
+    "channels": [],
+    "keywords": ["Hanuman Chalisa", "Hanuman Bhajan", "Bajrangbali Aarti", "Sankat Mochan Bhajan", "Hanuman Aarti"]
+  },
+  "Durga": {
+    "channels": [],
+    "keywords": ["Durga Bhajan", "Maa Durga Aarti", "Ambe Maa Bhajan", "Durga Chalisa", "Jai Mata Di Bhajan"]
+  },
+  "Ganesh": {
+    "channels": [],
+    "keywords": ["Ganesh Bhajan", "Ganpati Aarti", "Ganesh Chaturthi Bhajan", "Ganpati Bappa Bhajan", "Vakratunda Mahakaya"]
+  }
+}
