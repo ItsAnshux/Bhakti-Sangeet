@@ -1,7 +1,43 @@
 {
-  "lastUpdated": "2026-08-12T05:32:56.475Z",
+  "lastUpdated": "2026-08-12T08:54:33.515Z",
   "categories": {
     "Shiv": [
+      {
+        "id": "iHdYhdDg1Co",
+        "title": "Bholenath ji | Hashtag pandit | Abhilipsa panda | Tera roop hai prachand | Har har Shambhu",
+        "channel": "Hashtag Pandit",
+        "publishedAt": "2022-07-01T04:30:11Z"
+      },
+      {
+        "id": "Cq7JHhzQH88",
+        "title": "Om Namah Shivaya 108 Times in 2 Minutes",
+        "channel": "Manjeera Ganguly - Topic",
+        "publishedAt": "2021-08-23T20:35:24Z"
+      },
+      {
+        "id": "OVjzw1ELFU0",
+        "title": "तेरे दर पे आया हूँ 😭 | Emotional Mahadev Bhajan 2026 | Shiv Bhajan | Har Har Mahadev",
+        "channel": "Latest Shiv Bhajan",
+        "publishedAt": "2026-06-20T00:30:09Z"
+      },
+      {
+        "id": "3KXWS9i2v2A",
+        "title": "Non Stop Shiv Bhajan શિવ ભજન | Gujarati Bhajan | Gujarati Song | Shambhu Sharane Padi | Shiv Mala",
+        "channel": "Nova Gujarati",
+        "publishedAt": "2025-01-06T01:00:07Z"
+      },
+      {
+        "id": "OQyVJR25LaM",
+        "title": "संपूर्ण शिव मंत्र Shiv Mantra | Namami Shamishan Nirvan Roopam | Lingashtakam | Shiv Bhajan",
+        "channel": "Nova Bhajan Kirtan",
+        "publishedAt": "2025-02-26T01:00:06Z"
+      },
+      {
+        "id": "EcKabOGuXko",
+        "title": "मैं शून्य हो रहा हूँ 🙏 | arijit singh सबसे भावुक महादेव भक्ति गीत | Shiv Bhajan | Mahadev Song | ",
+        "channel": "Nayra Presents",
+        "publishedAt": "2026-07-09T12:35:15Z"
+      },
       {
         "id": "7R0YZ6lsCNU",
         "title": "🕉️Shiv Bhajan: जीना सिखाया भोलेनाथ जी | Jeena Sikhaya Bholenath Ji | Kishan Bhagat | Devotional Song",
@@ -701,6 +737,54 @@
     ],
     "Krishna": [
       {
+        "id": "u9RAtlko7Q8",
+        "title": "Achyutham Keshavam Krishna Damodaram 🙏 | Superhit Krishna Bhajan | Little Krishna&#39;s Forest Adventure",
+        "channel": "Mythical Legends",
+        "publishedAt": "2026-02-11T13:30:57Z"
+      },
+      {
+        "id": "WaQfMfy0laY",
+        "title": "Feel the Tears of Bhakti – Heart Melting Hare Krishna Kirtan",
+        "channel": "Prem Rasa Kirtan",
+        "publishedAt": "2026-01-08T12:30:52Z"
+      },
+      {
+        "id": "bNksL-W5IgI",
+        "title": "Non Stop KRISHNA Bhajan | Best of Swasti Mehul | Latest Bhakti Songs | Radha Krishn songs",
+        "channel": "Swasti Mehul Music",
+        "publishedAt": "2023-09-04T05:37:58Z"
+      },
+      {
+        "id": "c-CMc0Cuu30",
+        "title": "आंसू रुकेंगे नहीं ये दर्द भरा भजन सुनकर | Radha Krishna Dard Bhara Bhajan | New Bhajan Radha Krishna",
+        "channel": "Saanwara Bhakti",
+        "publishedAt": "2025-06-20T23:30:22Z"
+      },
+      {
+        "id": "ikFKRcIjCmk",
+        "title": "राधा की तमन्ना है, कान्हा मुझे मिल जाए ❤️ | Radha Krishna Bhajan | Original Krishna Love Song | 2026",
+        "channel": "Rachna Jha Official ",
+        "publishedAt": "2026-08-12T00:45:35Z"
+      },
+      {
+        "id": "TXSOXkDIdaY",
+        "title": "Shree Krishna Govind Hare Murari | Most Beautiful Krishna Bhajan | Viral Krishna Song",
+        "channel": "Wow Baby Song",
+        "publishedAt": "2026-08-10T02:30:30Z"
+      },
+      {
+        "id": "qPFGGpGbZEs",
+        "title": "Achyutam Keshavam | Beautiful Krishna Bhajan for Inner Peace",
+        "channel": "Sounds of Sadhana",
+        "publishedAt": "2025-11-26T15:31:48Z"
+      },
+      {
+        "id": "pzzPowh241o",
+        "title": "ACHYUTAM KESHAVAM KRISHNA DAMODARAM | VERY BEAUTIFUL SONG - POPULAR KRISHNA BHAJAN ( FULL SONG )",
+        "channel": "Spiritual Mantra",
+        "publishedAt": "2016-06-27T00:30:00Z"
+      },
+      {
         "id": "S00emvofCq4",
         "title": "Krishna Aarti | श्री बाँके बिहारी तेरी आरती गाउ | Sri Banke Bihari Teri Aarti Gaun | Shyam Bhajan",
         "channel": "Ziiki Media",
@@ -1339,6 +1423,12 @@
     ],
     "Ram": [
       {
+        "id": "QKmvu1p1i1w",
+        "title": "Shri Ram Ram Rameti Mantra | एक बार राम नाम जाप हजार बार विष्णु नाम के बराबर है #shorts #ramnaamjaap",
+        "channel": "Sitaram hanuman TV ",
+        "publishedAt": "2025-09-06T05:11:09Z"
+      },
+      {
         "id": "TAWrikjem9g",
         "title": "Shri Ram&#39;s Ji’s AARTI (with ENGLISH subtitles)",
         "channel": "Jagadguru Kripalu Parishat (JKP)",
@@ -1911,6 +2001,72 @@
     ],
     "Hanuman": [
       {
+        "id": "aXshGm_YiYw",
+        "title": "Lord Hanuman Devotional Songs | Mangala Harathi Hanuma Song | Telugu Bhakti Songs | Mango Music",
+        "channel": "Mango Music",
+        "publishedAt": "2018-07-09T23:30:00Z"
+      },
+      {
+        "id": "CI9CYl5-_uc",
+        "title": "आरती कीजे हनुमान लला की फास्ट |Hanuman Ji fast Aarti, Jai Hanuman Lala Ki Aarti 2025|बजरंग बली आरती",
+        "channel": "Bhajan_ katha_ Vatika ",
+        "publishedAt": "2025-09-13T13:45:02Z"
+      },
+      {
+        "id": "0duXPhS37SY",
+        "title": "Sunlo Pukar (Official Video) Hansraj Raghuwanshi | Hanuman Janmotsav Special Bhajan 2026",
+        "channel": "Hansraj Raghuwanshi",
+        "publishedAt": "2026-04-01T12:30:07Z"
+      },
+      {
+        "id": "taXQqQyfoco",
+        "title": "hanuman chalisa hindi bhajan gulshan kumar, hanuman chalisa bhajan hari om sharan,",
+        "channel": "BR SPEED BREAKER",
+        "publishedAt": "2025-04-29T01:52:21Z"
+      },
+      {
+        "id": "fdD4_lexi7s",
+        "title": "Most Popular Hanuman Bhajan I Ram Na Milenge Hanuman Ke Bina I LAKHBIR SINGH LAKKHA I HD Video",
+        "channel": "T-Series Bhakti Sagar",
+        "publishedAt": "2018-06-19T00:30:00Z"
+      },
+      {
+        "id": "Io40ShgyXso",
+        "title": "दुःख भंजन हनुमान भजन | Bajrang Baan | Ab Jago Hanumat Pyare | Hanuman Bhajan",
+        "channel": "Saregama Bhakti",
+        "publishedAt": "2026-08-10T23:30:03Z"
+      },
+      {
+        "id": "wS7okEDsAWI",
+        "title": "हनुमान चालीसा, Hanuman Chalisa I HARI OM SHARAN I Shri Hanuman Chalisa I Jai Jai Shri Hanuman",
+        "channel": "T-Series Bhakti Sagar",
+        "publishedAt": "2017-12-12T01:30:01Z"
+      },
+      {
+        "id": "gLZO6O9v-IY",
+        "title": "Shree Hanuman Chalisa | श्री हनुमान चालीसा | Salim Sulaiman | Shreya Ghoshal | Hanuman Jayanti 2025",
+        "channel": "Salim Sulaiman Music",
+        "publishedAt": "2025-04-08T08:30:07Z"
+      },
+      {
+        "id": "YW90B26hnaw",
+        "title": "Hanuman Chalisa Super Fast || Hanuman Chalisa || हनुमान चालीसा || Brijesh Shandilya",
+        "channel": "Brijesh Shandilya",
+        "publishedAt": "2020-10-17T16:06:40Z"
+      },
+      {
+        "id": "sX2bYV6nSy4",
+        "title": "हनुमान चालीसा | Hanuman Chalisa Full | Shekhar Ravjiani | Official Video | Hanuman Jayanti Special",
+        "channel": "Zee Music Company",
+        "publishedAt": "2014-07-29T15:48:30Z"
+      },
+      {
+        "id": "Ipuh-P9NtuY",
+        "title": "Hanuman Chalisa",
+        "channel": "M.S. Subbulakshmi - Topic",
+        "publishedAt": "2024-02-11T08:18:03Z"
+      },
+      {
         "id": "JhlCQvcUSyU",
         "title": "24 | Anjaneya Swami mangala harathi | mangala harathi anduko | Hanuman song | Anjaneya Swami song",
         "channel": "Bhargavi Pasupuleti Songs",
@@ -2380,6 +2536,18 @@
       }
     ],
     "Durga": [
+      {
+        "id": "T0XEQ8f2h6Q",
+        "title": "Durga Mata Aarti | Om Jai Ambe Gauri Aarti by Narendra Chanchal with Lyrics",
+        "channel": "Tips Bhakti Prem",
+        "publishedAt": "2018-03-16T11:49:19Z"
+      },
+      {
+        "id": "9A0GwNw0Zno",
+        "title": "सुपर-फास्ट ॐ जय अम्बे गौरी दुर्गा आरती | Super Fast Jai Ambe Gauri Durga Aarti",
+        "channel": "Glare Music Bhakti",
+        "publishedAt": "2020-12-29T14:33:52Z"
+      },
       {
         "id": "kQiH4Qk63d4",
         "title": "Tune Mujhe Bulaya Sherawaliye || Navratri Special Song || Jai Mata Di || #navratri #trending #bhakti",
@@ -2880,6 +3048,36 @@
       }
     ],
     "Ganesh": [
+      {
+        "id": "vqCW6q-bljY",
+        "title": "Ganesh Shloka | Vakratunda Mahakaya | Ganpati Bappa Morya | Ganpati Mantra | Devotional Song",
+        "channel": "Shemaroo Bhakti",
+        "publishedAt": "2026-08-12T00:30:37Z"
+      },
+      {
+        "id": "81Ue-7Mn1js",
+        "title": "Sukh Kartha Dukh Hartha Ganapati Bappa Morya – This Ganesha Bhajan Will Give You Goosebumps",
+        "channel": "Epic India Unfolded",
+        "publishedAt": "2025-08-17T07:44:22Z"
+      },
+      {
+        "id": "v0vxWV5c9gU",
+        "title": "Gajanan Sukh Karta Dukh Harta | Divya Kumar &amp; Rashmeet Kaur | Ravi Singhal, Kunaal Vermaa | Lyrical",
+        "channel": "Timeless Tunes",
+        "publishedAt": "2025-08-28T07:02:38Z"
+      },
+      {
+        "id": "aJIkWmi6gt0",
+        "title": "Sankat Harlo Mangal Kardo | संकट हरलो मंगल कर दो | Ganesh Bhajan @strongbhakti9811",
+        "channel": "Strong Bhakti",
+        "publishedAt": "2022-12-07T00:00:00Z"
+      },
+      {
+        "id": "3_feryA5-18",
+        "title": "Ganpati Aarti (Jai Dev Jai Dev)",
+        "channel": "Rohan Vinayak - Topic",
+        "publishedAt": "2025-09-26T09:43:02Z"
+      },
       {
         "id": "Jd2TYti08Ss",
         "title": "बुधवार स्पेशल | गणेश जी के भजन 2026 | Ganesh Bhajan 2026 | Ganesh Ji Ke Bhajan | Ganesh Songs",
